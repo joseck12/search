@@ -1,0 +1,35 @@
+{% extends 'base.html' %}
+{% import 'macros.html' as macro%}
+
+
+{% block content %}
+<div class="container">
+    <div class="row">
+        <div class="col-xs-8 col-xs-offset-2">
+        <h4 style="color:chartreuse; font-size:3em; text-align:center;"> {{category.category}}</h4>
+        <h4 style="text-align:center;">Click here to add Category <i class="fa fa-fw fa-heart text-danger"></i><a
+        href="/category/pitch/{{category.id}}" class="btn btn-primary btn-xs"
+        target="_blank"><i class="fa fa-fw "></i>ADD</a></h4>
+        </div>
+    </div>
+    <hr>
+    {% if pitches %}
+    <div class="container">
+        <div class="row carousel-row">
+            <div class="col-xs-12 col-xs-offset-0 slide-row">
+                <div class="slide-content">
+                    <p>
+                        {{ macro.displayPitches(pitches)}}
+                    </p>
+                </div>
+                {%else%}
+                <div class="well">
+                    <h4 style="padding:10%; text-align:center; font-size:50px">.................</h4>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endif %}
+{% endblock %}
+

@@ -1,0 +1,21 @@
+{% extends 'base.html'%}
+{% import 'macros.html' as macro %}
+{% block content%}
+
+<div class="container";>
+    <div class="row">
+    <h3>One Minute Pitch</h3><br>
+    <h5> Add pitch categories </h5>
+    <a href="/add/category">Click</a>
+
+    </div>
+        <h7 class="category-list">
+            {{ macro.displayCategoryList(categories) }}
+        </h7>
+    <div class="row2">
+    <h5><strong>My pitches<hr></strong></h5>
+    {{macro.displayAllPitches(all_pitches)}}
+
+    </div>
+</div>
+{% endblock %}
