@@ -1,0 +1,197 @@
+.navbar{
+    background-color: black;
+    color: #17202A;
+    min-height: 100px;
+
+}
+#search{
+    float: left;
+    position: absolute;
+    left: 900px;
+}
+
+#container1{
+    background-image: url("https://images.unsplash.com/photo-1452780212940-6f5c0d14d848?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1510&q=80");
+    background-repeat: no-repeat;
+    padding: 150px;
+    background-size: cover;
+    min-height: 50px;
+    background-position: 70% 30%;
+}
+#text{
+    color: black;
+    text-align: left;
+    font-size: 28px;
+    text-shadow: white;
+}
+#container2
+{
+    background-color: white;
+    min-height: 100px;
+    font-size: 18px;
+}
+
+#text2{
+    color: black;
+    text-align: center;
+    line-height: 1.5;
+    font-size: 80%;
+    padding-top: 20px;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    display: inline-block;
+
+}
+li {
+    display: inline-block;
+
+}
+
+li a {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: grey;
+}
+
+#row4{
+    align-content: centre;
+}
+
+#card1{
+    width: 110%;
+    height: 390px;
+    bottom: 20px;
+    transition: 1s;
+    margin: 15px 15px;
+    padding: 50px;
+    border-radius: 2px;
+    align-content: center;
+}
+
+#card1:hover{
+    transform: scale(1.3);
+    background: white;
+    z-index: 2;
+}
+
+#row5{
+    background-repeat: no-repeat;
+    background-color: #000;
+    height: 360px;
+    background-size: cover;
+}
+
+#location-container{
+    background-repeat: no-repeat;
+    height: 700px;
+    background-size: cover;
+}
+
+#column4{
+    padding:10px;
+    float: left;
+    top: 100px;
+    left: 50px;
+}
+
+#locationrow{
+    left: 50%;
+}
+
+input[type=text], select, textarea {
+    width: 50%;
+    padding: 2px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+
+input[type=submit] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+
+#container3{
+    background-color: #202020;
+    position: absolute;
+    top: 1080px;
+    left: 25%;
+    width: 40%;
+    opacity: 0.7;
+}
+
+#text5{
+    color: white;
+}
+
+.button{
+    width: 20%;
+    height: 20%;
+    color: white;
+    box-shadow: 0 0 0 3px white inset;
+    background: transparent;
+    border-radius: 5%;
+}
+
+#body-container{
+    padding: 0px;
+}
+
+@media screen and (max-width:700px){
+    #body-container{
+        width: 100%;
+    }
+    #container1{
+        width: 700px;
+    }
+    .col-md-4{
+        width: 100%;
+    }
+
+}#card1{
+    width: 100%;
+}
+
+@media (min-width: 300px){
+    p{
+        font-size: 1.5rem;
+        line-height: 1.5rem;
+    }
+
+    h4{
+        font-size: 1.5rem;
+        line-height: 1.5rem;
+    }
+}
+#notfound{
+background-color: #CACFD2;
+height: 700px;
+width: 100%;
+background-size: auto;
+}
+.text-centre{
+    color: #2C3E50;
+    text-align:center;
+}

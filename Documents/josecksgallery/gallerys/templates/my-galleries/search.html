@@ -1,0 +1,19 @@
+{%extends 'my-galleries/base.html'%}
+{% block content%}
+<h2>Search</h2>
+<div class="row">
+    <p>search</p>
+{% for image in images %}
+   <div class="col-md-6">
+
+      <h2>{{image.title}}</h2>
+      <img src={{image.image_upload.url}}>
+
+    </div>
+    {% empty %}
+    <div class="row" id="notfound">
+    <h1 class="text-centre"> The category does not exist.Try a different one!</h1>
+    </div>
+{% endfor %}
+</div>
+{% endblock %}
